@@ -117,6 +117,11 @@ int* countingSelectionSort(int* array, int size)
             }
         }
 
+        if (min == i)
+        {
+            continue;
+        }
+
         countingArray[i]++;
         countingArray[min]++;
         swap(array, i, min);
